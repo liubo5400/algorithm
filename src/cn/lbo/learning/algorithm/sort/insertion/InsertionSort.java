@@ -8,6 +8,7 @@ package cn.lbo.learning.algorithm.sort.insertion;
  * @Description: 插入排序
  * @原理：1、把所有元素分为两组，已排序和未排序的。 2、找到未排序的第一个元素，向已排序的组中插入。
  * 3、倒序遍历已排序的元素，依次和待插入元素比较，直到找到一个元素小于等于待插入元素，那么把待插入元素放到此为止，其他元素后移一位。
+ * @时间复杂度： O(N ^ 2)
  * @Version 1.0
  */
 public class InsertionSort {
