@@ -128,16 +128,4 @@ public class MergeSort {
         return v.compareTo(w) < 0;
     }
 
-    /**
-     * 交换数组中，i索引和j索引的值
-     *
-     * @param a
-     * @param i
-     * @param j
-     */
-    private static void exch(Comparable[] a, int i, int j) {
-        Comparable t = a[i];
-        a[i] = a[j];
-        a[j] = t;
-    }
 }

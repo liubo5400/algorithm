@@ -1,12 +1,16 @@
 package cn.lbo.learning.algorithm.sort.insertion;
 
+import java.util.Arrays;
+
 /**
  * @Author bjliubo
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.insertion
  * @ClassName: InsertionSort
  * @Description: 插入排序
- * @原理：1、把所有元素分为两组，已排序和未排序的。 2、找到未排序的第一个元素，向已排序的组中插入。
+ * @原理：
+ * 1、把所有元素分为两组，已排序和未排序的。
+ * 2、找到未排序的第一个元素，向已排序的组中插入。
  * 3、倒序遍历已排序的元素，依次和待插入元素比较，直到找到一个元素小于等于待插入元素，那么把待插入元素放到此为止，其他元素后移一位。
  * @时间复杂度： O(N ^ 2)
  * @Version 1.0
@@ -15,6 +19,7 @@ public class InsertionSort {
 
     /**
      * 对a数组进行排序
+     * 每次遍历都找到待插入元素，然后插入到有序队列中
      *
      * @param a
      */
@@ -23,7 +28,11 @@ public class InsertionSort {
             for (int j = i; j > 0; j--) {//倒序取已排序元素
                 if (greater(a[j - 1], a[j])) {//判断前一个元素的值大于目标元素
                     exch(a, j - 1, j);//交换前一元素和目标元素位置
+                    System.out.print(i + " " + j +"  ");
+                    System.out.println(Arrays.toString(a));
                 } else {
+                    System.out.print(i + " " + j +"  ");
+                    System.out.println(Arrays.toString(a));
                     break;
                 }
             }

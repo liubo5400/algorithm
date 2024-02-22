@@ -6,7 +6,8 @@ package cn.lbo.learning.algorithm.sort.shell;
  * @PackageName:cn.lbo.learning.algorithm.sort.shell
  * @ClassName: ShellSort
  * @Description: 希尔排序
- * @原理： 1、选定一个增量h，按照增量h作为数据分组的依据，对数据进行分组
+ * @原理：
+ * 1、选定一个增量h，按照增量h作为数据分组的依据，对数据进行分组
  * 2、对分好组的每一组数据进行插入排序
  * 3、减少增量h，最小减为1，重复第二步操作
  * @Version 1.0

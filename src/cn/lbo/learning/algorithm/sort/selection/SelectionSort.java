@@ -1,12 +1,15 @@
 package cn.lbo.learning.algorithm.sort.selection;
 
+import java.util.Arrays;
+
 /**
  * @Author bjliubo
  * @Date 2023/3/9 9:43
  * @PackageName:cn.lbo.learning.algorithm.sort.selection
  * @ClassName: SelectionSort
  * @Description: 选择排序
- * @原理： 1、每一次遍历过程中，都假定第一个索引处元素是最小值，和其他索引处的值依次比较，如果当前索引大于其他索引处的值，
+ * @原理：
+ * 1、每一次遍历过程中，都假定第一个索引处元素是最小值，和其他索引处的值依次比较，如果当前索引大于其他索引处的值，
  * 则假定其他某个索引处的值是最小值，最后可以找到最小值所在索引位置。
  * 2、交换第一个索引处和最小值所在索引处的值。
  * @时间复杂度： O(N ^ 2)
@@ -16,6 +19,8 @@ public class SelectionSort {
 
     /**
      * 对a数组进行排序
+     * 从第一个元素到倒数第二个元素，每次遍历都找到最小值所在索引位置，然后交换索引i和最小值所在索引minIndex的值
+     * 最小值在最左边
      *
      * @param a
      */
@@ -28,6 +33,8 @@ public class SelectionSort {
                 }
             }
             exch(a, i, minIndex);//交换索引i和最小值所在索引minIndex的值
+            System.out.print(i + " " + minIndex + "   ");
+            System.out.println(Arrays.toString(a));
         }
     }
 

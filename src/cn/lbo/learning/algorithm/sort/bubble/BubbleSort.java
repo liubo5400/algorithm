@@ -1,12 +1,15 @@
 package cn.lbo.learning.algorithm.sort.bubble;
 
+import java.util.Arrays;
+
 /**
  * @Author bjliubo
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.bubble
  * @ClassName: BubbleSort
  * @Description: 冒泡排序
- * @原理： 1、比较相邻两个元素，如果前一个元素比后一个元素大，则交换位置。
+ * @原理：
+ * 1、比较相邻两个元素，如果前一个元素比后一个元素大，则交换位置。
  * 2、对每一对相邻元素做同样的操作，最终最右侧的元素就是最大元素。
  * @时间复杂度： O(N ^ 2)
  * @Version 1.0
@@ -15,6 +18,7 @@ public class BubbleSort {
 
     /**
      * 对a数组进行排序
+     * 每次遍历都对比相邻的两个元素，把最大值放在最右边
      *
      * @param a
      */
@@ -24,6 +28,8 @@ public class BubbleSort {
                 if (greater(a[j], a[j + 1])) {   // 如果j 大于 j+1
                     exch(a, j, j + 1);        // 交换两个索引的值
                 }
+                System.out.print(i + " " + j +"  ");
+                System.out.println(Arrays.toString(a));
             }
         }
     }
