@@ -5,7 +5,7 @@ package cn.lbo.learning.algorithm.sort.merge;
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.merge
  * @ClassName: MergeSort
- * @Description: 归并排序
+ * @Description: 归并排序  （稳定排序）
  * <p>
  * 一、定义：
  * 归并排序，是创建在归并操作上的一种有效的排序算法。算法是采用分治法（Divide and Conquer）的一个非常典型的应用，

@@ -5,8 +5,9 @@ package cn.lbo.learning.algorithm.sort.quick;
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.quick
  * @ClassName: QuickSort
- * @Description: 快速排序
- * @原理： 1、选定一个分界值，将数组分为左右两个部分
+ * @Description: 快速排序 （不稳定排序）
+ * @原理：
+ * 1、选定一个分界值，将数组分为左右两个部分
  * 2、将大于分界值的所有元素放到数组右边，将小于分界值的所有元素放到数组左边
  * 3、分别对左右两边继续排序，再次取分界值，进行比较拆分
  * 4、重复上述操作，直到全部排序完成

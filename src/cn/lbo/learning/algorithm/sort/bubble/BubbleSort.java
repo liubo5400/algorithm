@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.bubble
  * @ClassName: BubbleSort
- * @Description: 冒泡排序
+ * @Description: 冒泡排序  （稳定排序）
  * @原理：
  * 1、比较相邻两个元素，如果前一个元素比后一个元素大，则交换位置。
  * 2、对每一对相邻元素做同样的操作，最终最右侧的元素就是最大元素。

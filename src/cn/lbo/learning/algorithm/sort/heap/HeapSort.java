@@ -5,7 +5,7 @@ package cn.lbo.learning.algorithm.sort.heap;
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.heap
  * @ClassName: HeapSort
- * @Description: 堆排序
+ * @Description: 堆排序 （不稳定排序）
  * 基本思路是将输入数据构建成一个堆，然后依次取出堆顶元素并将其放到输出数组的末尾，最终得到一个有序的数组。
  * 时间复杂度为O(nlogn)
  * @Version 1.0

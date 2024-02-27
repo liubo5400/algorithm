@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Date 2023/3/9 9:42
  * @PackageName:cn.lbo.learning.algorithm.sort.insertion
  * @ClassName: InsertionSort
- * @Description: 插入排序
+ * @Description: 插入排序  （稳定排序）
  * @原理：
  * 1、把所有元素分为两组，已排序和未排序的。
  * 2、找到未排序的第一个元素，向已排序的组中插入。
